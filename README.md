@@ -5,10 +5,16 @@ Feature Toggle Decorator
 
 A decorator that will only execute the wrapped function if it is given a truthy parameter, and optionally call a fallback method if the feature is not enabled. 
 
+## Installation
+
+```shell script
+npm install --save feature-toggle-decorator
+```
+
 ## Usage
 
 ```javascript 
-import { isEnabled } from "./is-enabled";
+import { isEnabled } from "feature-toggle-decorator";
 
 const features = {
   FEATURE_1: true,
